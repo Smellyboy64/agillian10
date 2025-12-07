@@ -1,0 +1,104 @@
+ 
+/* this is a comment */
+
+* {
+  box-shadow: 5px 5px 10px black;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header */
+header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+h1 {
+  color: blue;
+  font-size: 36px;
+  text-align: center;
+}
+
+p {
+  font-family: Arial, sans-serif; 
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Top navigation bar */
+nav {
+  display: flex;
+  background-color: #333;
+}
+
+/* Navigation bar links */
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+nav a:hover {
+  background-color: #8d7878;
+  color: black;
+  font-weight: bold;
+}
+
+/* Column container */
+main {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Main column */
+section {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg:hover {
+  background-color: #d34f4f;
+  width: 100%;
+  padding: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  outline-style: dashed;
+  outline-width: 3px;
+  outline-color: red;
+}
+
+article {
+  padding: 15px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+#site-footer {
+  background: yellow;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  main, nav {   
+    flex-direction: column;
+  }
+}
